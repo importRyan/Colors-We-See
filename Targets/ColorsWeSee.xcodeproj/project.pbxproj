@@ -14,8 +14,6 @@
 		947A0F4E2BB1E9EA002AF347 /* Colors We See Clip.app in Embed App Clips */ = {isa = PBXBuildFile; fileRef = 947A0F3F2BB1E9E9002AF347 /* Colors We See Clip.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		947A0F552BB1EAA9002AF347 /* FirebaseCrashlytics in Frameworks */ = {isa = PBXBuildFile; productRef = 947A0F542BB1EAA9002AF347 /* FirebaseCrashlytics */; };
 		947A0F572BB1EAB3002AF347 /* Root in Frameworks */ = {isa = PBXBuildFile; productRef = 947A0F562BB1EAB3002AF347 /* Root */; };
-		947A0F592BB1ED52002AF347 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 947A0F582BB1ED52002AF347 /* GoogleService-Info.plist */; };
-		94FA78442BADFDBD00B6C096 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 94FA78432BADFDBD00B6C096 /* GoogleService-Info.plist */; };
 		94FA78482BADFE8900B6C096 /* Root in Frameworks */ = {isa = PBXBuildFile; productRef = 94FA78472BADFE8900B6C096 /* Root */; };
 		94FA784B2BADFEA500B6C096 /* FirebaseCrashlytics in Frameworks */ = {isa = PBXBuildFile; productRef = 94FA784A2BADFEA500B6C096 /* FirebaseCrashlytics */; };
 /* End PBXBuildFile section */
@@ -51,9 +49,10 @@
 		947A0F3F2BB1E9E9002AF347 /* Colors We See Clip.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Colors We See Clip.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		947A0F4A2BB1E9EA002AF347 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		947A0F4B2BB1E9EA002AF347 /* AppClip.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = AppClip.entitlements; sourceTree = "<group>"; };
-		947A0F582BB1ED52002AF347 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		947A0F582BB1ED52002AF347 /* GoogleService-Info-Release.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info-Release.plist"; sourceTree = "<group>"; };
+		94D8097C2BB37CE000991C27 /* firebase.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = firebase.sh; sourceTree = "<group>"; };
 		94E1A73F2BB2893000C83B3F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		94FA78432BADFDBD00B6C096 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		94FA78432BADFDBD00B6C096 /* GoogleService-Info-Release.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info-Release.plist"; sourceTree = "<group>"; };
 		94FA784D2BADFF3F00B6C096 /* iOSApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = iOSApp.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -84,6 +83,7 @@
 			children = (
 				94775F192BADFCDB008B7512 /* iOS */,
 				947A0F402BB1E9E9002AF347 /* AppClip */,
+				94D8097E2BB37CE000991C27 /* BuildScripts */,
 				94775F182BADFCDB008B7512 /* Products */,
 				94FA78462BADFE8900B6C096 /* Frameworks */,
 			);
@@ -104,7 +104,7 @@
 				94775F1A2BADFCDB008B7512 /* iOSApp.swift */,
 				94FA784D2BADFF3F00B6C096 /* iOSApp.entitlements */,
 				94E1A73F2BB2893000C83B3F /* Info.plist */,
-				94FA78432BADFDBD00B6C096 /* GoogleService-Info.plist */,
+				94FA78432BADFDBD00B6C096 /* GoogleService-Info-Release.plist */,
 				94775F1E2BADFCDC008B7512 /* Assets.xcassets */,
 			);
 			path = iOS;
@@ -115,9 +115,17 @@
 			children = (
 				947A0F4B2BB1E9EA002AF347 /* AppClip.entitlements */,
 				947A0F4A2BB1E9EA002AF347 /* Info.plist */,
-				947A0F582BB1ED52002AF347 /* GoogleService-Info.plist */,
+				947A0F582BB1ED52002AF347 /* GoogleService-Info-Release.plist */,
 			);
 			path = AppClip;
+			sourceTree = "<group>";
+		};
+		94D8097E2BB37CE000991C27 /* BuildScripts */ = {
+			isa = PBXGroup;
+			children = (
+				94D8097C2BB37CE000991C27 /* firebase.sh */,
+			);
+			path = BuildScripts;
 			sourceTree = "<group>";
 		};
 		94FA78462BADFE8900B6C096 /* Frameworks */ = {
@@ -137,6 +145,7 @@
 				94775F132BADFCDB008B7512 /* Sources */,
 				94775F142BADFCDB008B7512 /* Frameworks */,
 				94775F152BADFCDB008B7512 /* Resources */,
+				94CAA7A32BB35D8A00F62C5B /* Copy & Populate Firebase Plist */,
 				94FA78452BADFE1100B6C096 /* Crashlytics dSYMs */,
 				947A0F4F2BB1E9EA002AF347 /* Embed App Clips */,
 			);
@@ -161,6 +170,7 @@
 				947A0F3B2BB1E9E9002AF347 /* Sources */,
 				947A0F3C2BB1E9E9002AF347 /* Frameworks */,
 				947A0F3D2BB1E9E9002AF347 /* Resources */,
+				9427B8F82BB36ED000971CFB /* Copy & Populate Firebase Plist (App Clip) */,
 				947A0F5A2BB1EEFC002AF347 /* Crashlytics dSYMs (App Clip) */,
 			);
 			buildRules = (
@@ -194,7 +204,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 94775F122BADFCDB008B7512 /* Build configuration list for PBXProject "Colors We See" */;
+			buildConfigurationList = 94775F122BADFCDB008B7512 /* Build configuration list for PBXProject "ColorsWeSee" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -222,7 +232,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				94775F1F2BADFCDC008B7512 /* Assets.xcassets in Resources */,
-				94FA78442BADFDBD00B6C096 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -231,13 +240,35 @@
 			buildActionMask = 2147483647;
 			files = (
 				9444BAEC2BB28BA4003C76BB /* Assets.xcassets in Resources */,
-				947A0F592BB1ED52002AF347 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		9427B8F82BB36ED000971CFB /* Copy & Populate Firebase Plist (App Clip) */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(PROJECT_DIR)/BuildScripts/firebase.sh",
+				"$(PROJECT_DIR)/AppClip/GoogleService-Info-Release.plist",
+				"${PROJECT_DIR}/BuildScripts//secrets.plist",
+			);
+			name = "Copy & Populate Firebase Plist (App Clip)";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_FOLDER_PATH}/GoogleService-Info.plist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "$PROJECT_DIR/BuildScripts/firebase.sh\n";
+			showEnvVarsInLog = 0;
+		};
 		947A0F5A2BB1EEFC002AF347 /* Crashlytics dSYMs (App Clip) */ = {
 			isa = PBXShellScriptBuildPhase;
 			alwaysOutOfDate = 1;
@@ -261,6 +292,28 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "if [ $CONFIGURATION == \"Debug\" ]; then\n  echo \"Skipping dSYM upload in Debug build.\"\n  exit 0\nfi\n\"${BUILD_DIR%/Build/*}/SourcePackages/checkouts/firebase-ios-sdk/Crashlytics/run\"\n";
+		};
+		94CAA7A32BB35D8A00F62C5B /* Copy & Populate Firebase Plist */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(PROJECT_DIR)/BuildScripts/firebase.sh",
+				"$(PROJECT_DIR)/iOS/GoogleService-Info-Release.plist",
+				"${PROJECT_DIR}/BuildScripts/secrets.plist",
+			);
+			name = "Copy & Populate Firebase Plist";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_FOLDER_PATH}/GoogleService-Info.plist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "$PROJECT_DIR/BuildScripts/firebase.sh\n";
 		};
 		94FA78452BADFE1100B6C096 /* Crashlytics dSYMs */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -450,6 +503,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = iOS/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
 				INFOPLIST_KEY_NSCameraUsageDescription = "Use peer reviewed color blindness simulations on the world around you.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -488,6 +542,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = iOS/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
 				INFOPLIST_KEY_NSCameraUsageDescription = "Use peer reviewed color blindness simulations on the world around you.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -526,6 +581,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = AppClip/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "Colors We See";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
 				INFOPLIST_KEY_NSCameraUsageDescription = "Use peer reviewed color blindness simulations on the world around you.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -563,6 +619,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = AppClip/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "Colors We See";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
 				INFOPLIST_KEY_NSCameraUsageDescription = "Use peer reviewed color blindness simulations on the world around you.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -588,7 +645,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		94775F122BADFCDB008B7512 /* Build configuration list for PBXProject "Colors We See" */ = {
+		94775F122BADFCDB008B7512 /* Build configuration list for PBXProject "ColorsWeSee" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				94775F232BADFCDC008B7512 /* Debug */,

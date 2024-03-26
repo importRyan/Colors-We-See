@@ -18,7 +18,7 @@
                BlueprintIdentifier = "94775F162BADFCDB008B7512"
                BuildableName = "Colors We See.app"
                BlueprintName = "Colors We See"
-               ReferencedContainer = "container:Colors We See.xcodeproj">
+               ReferencedContainer = "container:ColorsWeSee.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -47,7 +47,7 @@
             BlueprintIdentifier = "94775F162BADFCDB008B7512"
             BuildableName = "Colors We See.app"
             BlueprintName = "Colors We See"
-            ReferencedContainer = "container:Colors We See.xcodeproj">
+            ReferencedContainer = "container:ColorsWeSee.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </LaunchAction>
@@ -64,7 +64,7 @@
             BlueprintIdentifier = "94775F162BADFCDB008B7512"
             BuildableName = "Colors We See.app"
             BlueprintName = "Colors We See"
-            ReferencedContainer = "container:Colors We See.xcodeproj">
+            ReferencedContainer = "container:ColorsWeSee.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
