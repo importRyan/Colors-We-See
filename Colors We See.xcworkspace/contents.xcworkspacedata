@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "group:README.md">
+   </FileRef>
+   <FileRef
+      location = "group:Targets/Colors We See.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:ColorVision">
+   </FileRef>
+   <FileRef
+      location = "group:Clients">
+   </FileRef>
+   <FileRef
+      location = "group:Features">
+   </FileRef>
+</Workspace>

@@ -1,0 +1,147 @@
+{
+  "sourceLanguage" : "en",
+  "strings" : {
+    "AppClip.GetAppCTA" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Get the full app"
+          }
+        }
+      }
+    },
+    "CameraError.CTA" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Retry"
+          }
+        }
+      }
+    },
+    "CameraError.Headline" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Uh oh"
+          }
+        }
+      }
+    },
+    "CameraPermissions.Body" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Let's explore how your surroundings may look when color blind"
+          }
+        }
+      }
+    },
+    "CameraPermissions.CTA" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Start camera"
+          }
+        }
+      }
+    },
+    "CameraPermissions.Headline" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "300 million people see color differently"
+          }
+        }
+      }
+    },
+    "CameraPermissionsDenied.Body" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "To apply color blindness filters to the world around you, enable Camera usage in Settings > Privacy & Security > Camera > Colors We See."
+          }
+        }
+      }
+    },
+    "CameraPermissionsDenied.CTA" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Show Settings"
+          }
+        }
+      }
+    },
+    "CameraPermissionsDenied.Headline" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Camera Permissions Disabled"
+          }
+        }
+      }
+    },
+    "CameraUnavailable.Body" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Parental restrictions or hardware limitations prevent camera usage."
+          }
+        }
+      }
+    },
+    "CameraUnavailable.Headline" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Camera unavailable"
+          }
+        }
+      }
+    },
+    "SimulationPicker.AXLabelChangeSimulation" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Change simulation"
+          }
+        }
+      }
+    },
+    "SimulationPicker.AXValueLessCommon" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Less common"
+          }
+        }
+      }
+    },
+    "SimulationPicker.AXValueMoreCommon" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "More common"
+          }
+        }
+      }
+    }
+  },
+  "version" : "1.0"
+}

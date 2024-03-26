@@ -1,0 +1,196 @@
+{
+  "sourceLanguage" : "en",
+  "strings" : {
+    "Deutan.ColloquialType" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Red-Green"
+          }
+        }
+      }
+    },
+    "Deutan.Explanation" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fewer cones attuned to greenish hues melts reds and greens together. Yellows and oranges merge, as do purples and blues. Darker reds and teals can appear black. Pale colors can appear gray."
+          }
+        }
+      }
+    },
+    "Deutan.FullIntensityName" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Deuteranopia"
+          }
+        }
+      }
+    },
+    "Deutan.ShortName" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Deutan"
+          }
+        }
+      }
+    },
+    "Mono.ColloquialType" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mostly Rods"
+          }
+        }
+      }
+    },
+    "Mono.Explanation" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Monochromatic vision varies: some rely on rods, others retain one type of cone color receptor."
+          }
+        }
+      }
+    },
+    "Mono.FullIntensityName" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Achromatopsia"
+          }
+        }
+      }
+    },
+    "Mono.ShortName" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Monochromat"
+          }
+        }
+      }
+    },
+    "Protan.ColloquialType" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Red-Green"
+          }
+        }
+      }
+    },
+    "Protan.Explanation" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fewer cones attuned to greenish hues melts reds and greens together a little differently than for deutans. Yellows, teals and oranges merge, as do purples and blues. Teals can appear gray. Darker oranges and reds can appear black."
+          }
+        }
+      }
+    },
+    "Protan.FullIntensityName" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Protanopia"
+          }
+        }
+      }
+    },
+    "Protan.ShortName" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Protan"
+          }
+        }
+      }
+    },
+    "Tritan.ColloquialType" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Blue-Yellow"
+          }
+        }
+      }
+    },
+    "Tritan.Explanation" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fewer cones attuned to bluish light melts greens with blues and reds with purples, yellows, and oranges. Light blues can merge with grays."
+          }
+        }
+      }
+    },
+    "Tritan.FullIntensityName" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tritanopia"
+          }
+        }
+      }
+    },
+    "Tritan.ShortName" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tritan"
+          }
+        }
+      }
+    },
+    "Typical.Explanation" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Most of us see colors using three types of cone photoreceptors. Some of us have four."
+          }
+        }
+      }
+    },
+    "Typical.FullIntensityName" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Typical"
+          }
+        }
+      }
+    },
+    "Typical.ShortName" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Typical"
+          }
+        }
+      }
+    }
+  },
+  "version" : "1.0"
+}
