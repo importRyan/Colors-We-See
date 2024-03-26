@@ -10,7 +10,7 @@ The primary objective is to explore the latest Composable Architecture beta and 
 - [x] Setup XCC (pre-build script to populate Firebase secrets, test plans)
 - [ ] Remote config (version check)
 - [ ] Symbol stripping
-- [ ] App icon
+- [x] App icon
 - [ ] QC TestFlight
 - [ ] Submit barebones 1.0
 - [ ] User selected image simulation + export (PhotosTab)

@@ -27,14 +27,13 @@ let package = Package(
   targets: [
     .feature(
       .CameraTab,
-      clients: .VisionSimulation,
-      dependencies: .CpuColorVisionSimulation, .Oklab
+      clients: .VisionSimulation
     ),
     .test(.CameraTab),
     .feature(
       .Common,
       clients: .AppClip,
-      dependencies: .VisionType
+      dependencies: .CpuColorVisionSimulation, .Oklab, .VisionType
     ),
     .feature(.LearnTab),
     .feature(.PhotosTab),
