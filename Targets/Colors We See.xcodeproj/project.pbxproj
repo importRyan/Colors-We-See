@@ -8,9 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		9444BAEC2BB28BA4003C76BB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 94775F1E2BADFCDC008B7512 /* Assets.xcassets */; };
+		945B3B952BB2931400685EA0 /* iOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94775F1A2BADFCDB008B7512 /* iOSApp.swift */; };
 		94775F1B2BADFCDB008B7512 /* iOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94775F1A2BADFCDB008B7512 /* iOSApp.swift */; };
 		94775F1F2BADFCDC008B7512 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 94775F1E2BADFCDC008B7512 /* Assets.xcassets */; };
-		947A0F422BB1E9E9002AF347 /* AppClip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 947A0F412BB1E9E9002AF347 /* AppClip.swift */; };
 		947A0F4E2BB1E9EA002AF347 /* Colors We See Clip.app in Embed App Clips */ = {isa = PBXBuildFile; fileRef = 947A0F3F2BB1E9E9002AF347 /* Colors We See Clip.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		947A0F552BB1EAA9002AF347 /* FirebaseCrashlytics in Frameworks */ = {isa = PBXBuildFile; productRef = 947A0F542BB1EAA9002AF347 /* FirebaseCrashlytics */; };
 		947A0F572BB1EAB3002AF347 /* Root in Frameworks */ = {isa = PBXBuildFile; productRef = 947A0F562BB1EAB3002AF347 /* Root */; };
@@ -49,7 +49,6 @@
 		94775F1A2BADFCDB008B7512 /* iOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSApp.swift; sourceTree = "<group>"; };
 		94775F1E2BADFCDC008B7512 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		947A0F3F2BB1E9E9002AF347 /* Colors We See Clip.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Colors We See Clip.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		947A0F412BB1E9E9002AF347 /* AppClip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppClip.swift; sourceTree = "<group>"; };
 		947A0F4A2BB1E9EA002AF347 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		947A0F4B2BB1E9EA002AF347 /* AppClip.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = AppClip.entitlements; sourceTree = "<group>"; };
 		947A0F582BB1ED52002AF347 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
@@ -114,7 +113,6 @@
 		947A0F402BB1E9E9002AF347 /* AppClip */ = {
 			isa = PBXGroup;
 			children = (
-				947A0F412BB1E9E9002AF347 /* AppClip.swift */,
 				947A0F4B2BB1E9EA002AF347 /* AppClip.entitlements */,
 				947A0F4A2BB1E9EA002AF347 /* Info.plist */,
 				947A0F582BB1ED52002AF347 /* GoogleService-Info.plist */,
@@ -303,7 +301,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				947A0F422BB1E9E9002AF347 /* AppClip.swift in Sources */,
+				945B3B952BB2931400685EA0 /* iOSApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
