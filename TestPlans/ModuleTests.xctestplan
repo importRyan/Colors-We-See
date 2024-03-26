@@ -1,0 +1,47 @@
+{
+  "configurations" : [
+    {
+      "id" : "1FC65B4E-E7AD-4022-912D-A46E036B5276",
+      "name" : "Test Scheme Action",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "codeCoverage" : false,
+    "targetForVariableExpansion" : {
+      "containerPath" : "container:ColorsWeSee.xcodeproj",
+      "identifier" : "94775F162BADFCDB008B7512",
+      "name" : "Colors We See"
+    },
+    "testExecutionOrdering" : "random"
+  },
+  "testTargets" : [
+    {
+      "parallelizable" : true,
+      "target" : {
+        "containerPath" : "container:..\/Clients",
+        "identifier" : "AppClipTests",
+        "name" : "AppClipTests"
+      }
+    },
+    {
+      "parallelizable" : true,
+      "target" : {
+        "containerPath" : "container:..\/Features",
+        "identifier" : "CameraTabTests",
+        "name" : "CameraTabTests"
+      }
+    },
+    {
+      "parallelizable" : true,
+      "target" : {
+        "containerPath" : "container:..\/Features",
+        "identifier" : "RootTests",
+        "name" : "RootTests"
+      }
+    }
+  ],
+  "version" : 1
+}

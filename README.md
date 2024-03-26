@@ -7,7 +7,7 @@ The primary objective is to explore the latest Composable Architecture beta and 
 ![ColorsWeSee](https://github.com/importRyan/Colors-We-See/assets/78187398/e22f8477-2c24-43c9-93aa-8b0e9480dc29)
 
 ## To Dos
-- [ ] Setup XCC (pre-build script to populate Firebase secrets, test plans)
+- [x] Setup XCC (pre-build script to populate Firebase secrets, test plans)
 - [ ] Remote config (version check)
 - [ ] Symbol stripping
 - [ ] App icon

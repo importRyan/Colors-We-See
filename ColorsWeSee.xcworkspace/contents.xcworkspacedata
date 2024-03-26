@@ -16,4 +16,7 @@
    <FileRef
       location = "group:Features">
    </FileRef>
+   <FileRef
+      location = "group:TestPlans/ModuleTests.xctestplan">
+   </FileRef>
 </Workspace>
