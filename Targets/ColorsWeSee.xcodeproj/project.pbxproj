@@ -43,6 +43,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		942162612BB391E600AB9153 /* stripping.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = stripping.sh; sourceTree = "<group>"; };
 		94775F172BADFCDB008B7512 /* Colors We See.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Colors We See.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		94775F1A2BADFCDB008B7512 /* iOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSApp.swift; sourceTree = "<group>"; };
 		94775F1E2BADFCDC008B7512 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -124,6 +125,7 @@
 			isa = PBXGroup;
 			children = (
 				94D8097C2BB37CE000991C27 /* firebase.sh */,
+				942162612BB391E600AB9153 /* stripping.sh */,
 			);
 			path = BuildScripts;
 			sourceTree = "<group>";
@@ -146,8 +148,9 @@
 				94775F142BADFCDB008B7512 /* Frameworks */,
 				94775F152BADFCDB008B7512 /* Resources */,
 				94CAA7A32BB35D8A00F62C5B /* Copy & Populate Firebase Plist */,
-				94FA78452BADFE1100B6C096 /* Crashlytics dSYMs */,
 				947A0F4F2BB1E9EA002AF347 /* Embed App Clips */,
+				94FA78452BADFE1100B6C096 /* Crashlytics dSYMs */,
+				9421625F2BB3915700AB9153 /* Strip dyld Metadata */,
 			);
 			buildRules = (
 			);
@@ -172,6 +175,7 @@
 				947A0F3D2BB1E9E9002AF347 /* Resources */,
 				9427B8F82BB36ED000971CFB /* Copy & Populate Firebase Plist (App Clip) */,
 				947A0F5A2BB1EEFC002AF347 /* Crashlytics dSYMs (App Clip) */,
+				94AD63722BB3959F009C9B2E /* Strip dyld Metadata (App Clip) */,
 			);
 			buildRules = (
 			);
@@ -246,6 +250,27 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		9421625F2BB3915700AB9153 /* Strip dyld Metadata */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(PROJECT_DIR)/BuildScripts/stripping.sh",
+			);
+			name = "Strip dyld Metadata";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "$PROJECT_DIR/BuildScripts/stripping.sh\n";
+			showEnvVarsInLog = 0;
+		};
 		9427B8F82BB36ED000971CFB /* Copy & Populate Firebase Plist (App Clip) */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -292,6 +317,27 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "if [ $CONFIGURATION == \"Debug\" ]; then\n  echo \"Skipping dSYM upload in Debug build.\"\n  exit 0\nfi\n\"${BUILD_DIR%/Build/*}/SourcePackages/checkouts/firebase-ios-sdk/Crashlytics/run\"\n";
+		};
+		94AD63722BB3959F009C9B2E /* Strip dyld Metadata (App Clip) */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(PROJECT_DIR)/BuildScripts/stripping.sh",
+			);
+			name = "Strip dyld Metadata (App Clip)";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "$PROJECT_DIR/BuildScripts/stripping.sh\n";
+			showEnvVarsInLog = 0;
 		};
 		94CAA7A32BB35D8A00F62C5B /* Copy & Populate Firebase Plist */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -501,6 +547,7 @@
 				DEVELOPMENT_ASSET_PATHS = "";
 				DEVELOPMENT_TEAM = FVC2SFVFYG;
 				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = iOS/Info.plist;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
@@ -540,6 +587,7 @@
 				DEVELOPMENT_ASSET_PATHS = "";
 				DEVELOPMENT_TEAM = FVC2SFVFYG;
 				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = iOS/Info.plist;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
@@ -578,6 +626,7 @@
 				DEVELOPMENT_ASSET_PATHS = "";
 				DEVELOPMENT_TEAM = FVC2SFVFYG;
 				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = AppClip/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "Colors We See";
@@ -616,6 +665,7 @@
 				DEVELOPMENT_ASSET_PATHS = "";
 				DEVELOPMENT_TEAM = FVC2SFVFYG;
 				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = AppClip/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "Colors We See";
