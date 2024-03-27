@@ -4,7 +4,6 @@ public enum AnalyticsEventName: String, AnalyticsEvent.Name {
   case appBootstrapStart
   case appBootstrapSuccess
   case appBootstrapFailure
-  case appBootstrapFeatureFlagHydrationFailed
   case appBootstrapUpdateRequired
   case appClipInvocation
   case appClipStoreKitDownloadPromptPresented
@@ -19,7 +18,6 @@ public enum AnalyticsEventName: String, AnalyticsEvent.Name {
   /// TODO: - Crashlytics implementation
   case nonfatal
   case openAppStoreTapped
-  case openAppStoreURLMalformed
   case viewCameraPermissions
   case viewCameraPermissionsDenied
   case viewCameraUnavailable

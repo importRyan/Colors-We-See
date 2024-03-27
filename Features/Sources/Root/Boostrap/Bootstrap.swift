@@ -50,7 +50,7 @@ struct Bootstrap {
           .track { .event(.openAppStoreTapped) },
           .run { _ in
             guard let url = URL(string: "https://apps.apple.com/app/colors-we-see/id1645596758") else {
-              track(.event(.openAppStoreURLMalformed))
+              track(.event(.nonfatal).property(.variant, "malformed app store url"))
               return
             }
             await openURL(url)
@@ -118,7 +118,8 @@ private func bootstrap(_ send: Send<Bootstrap.Action>) async throws {
     try await featureFlags.hydrate()
   } catch {
     track(
-      .event(.appBootstrapFeatureFlagHydrationFailed)
+      .event(.nonfatal)
+      .property(.variant, "feature flag hydration failed")
       .property(.reason, error.localizedDescription)
     )
   }
