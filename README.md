@@ -4,7 +4,7 @@ Simulates color blindness on your camera feed using Metal filters.
 
 The primary objective is to explore the latest Composable Architecture beta and UGC-driven App Clip cards ahead of a larger App Clip-focused project.
 
-[Structure](#structure) [Screenshots](#screenshots) [To Dos](#tasks) 
+[Test Flight](https://testflight.apple.com/join/HVLQVH1w) [Structure](#structure) [Screenshots](#screenshots) [To Dos](#tasks) 
 
 ## Structure
 Quick overview of reducer/SPM module composition of this few day old hobby project:
