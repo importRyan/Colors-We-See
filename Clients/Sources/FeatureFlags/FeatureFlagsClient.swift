@@ -19,8 +19,13 @@ public extension FeatureFlagsClient {
       return value as? Flag.Value
 
     case .data(let data):
-      if Value.self == Data.self { return data as? Flag.Value  }
-      return try JSONDecoder().decode(Flag.Value.self, from: data)
+      if Value.self == Data.self { return data as? Flag.Value }
+      do {
+        return try JSONDecoder().decode(Flag.Value.self, from: data)
+      } catch {
+        if data.isEmpty || data == Data(#""""#.utf8) { return nil }
+        throw error
+      }
 
     case .number(let value):
       if let value = value as? Flag.Value { return value }
