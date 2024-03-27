@@ -3,6 +3,7 @@ import Foundation
 
 @DependencyClient
 public struct FeatureFlagsClient {
+  /// Call before accessing values
   public var hydrate: () async throws -> Void
   public var rawValue: (any FeatureFlag.Type) -> FeatureFlagRawValue?
 }

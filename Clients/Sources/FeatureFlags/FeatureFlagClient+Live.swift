@@ -4,9 +4,10 @@ import Foundation
 
 extension FeatureFlagsClient: DependencyKey {
   public static var liveValue: FeatureFlagsClient {
-    let firebase = RemoteConfig.remoteConfig()
+    var firebase: RemoteConfig!
     return FeatureFlagsClient(
       hydrate: {
+        firebase = RemoteConfig.remoteConfig()
         let settings = RemoteConfigSettings()
 #if DEBUG
         settings.minimumFetchInterval = 0
