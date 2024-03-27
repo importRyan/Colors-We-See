@@ -10,8 +10,8 @@ final class AppClipTests: XCTestCase {
 
       let context = try XCTUnwrap(activity.appClipInvocationURL?.appClipContext)
       let rawVisionType = try XCTUnwrap(context.visionType)
-      let visionType = try XCTUnwrap(VisionType(rawValue: rawVisionType))
-      XCTAssertEqual(visionType, visionType)
+      let parsedVisionType = try XCTUnwrap(VisionType(rawValue: rawVisionType))
+      XCTAssertEqual(parsedVisionType, visionType)
     }
   }
 
