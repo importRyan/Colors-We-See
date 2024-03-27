@@ -41,6 +41,14 @@
         "identifier" : "RootTests",
         "name" : "RootTests"
       }
+    },
+    {
+      "parallelizable" : true,
+      "target" : {
+        "containerPath" : "container:..\/Features",
+        "identifier" : "CommonTests",
+        "name" : "CommonTests"
+      }
     }
   ],
   "version" : 1

@@ -28,8 +28,17 @@ let package = Package(
       .Analytics,
       dependencies: .FirebaseAnalytics
     ),
-    .client(.AppClip),
-    .test(.AppClip, dependencies: .VisionType),
+    .client(
+      .AppClip
+    ),
+    .test(
+      .AppClip,
+      dependencies: .VisionType
+    ),
+    .client(
+      .FeatureFlags,
+      dependencies: .FirebaseRemoteConfig
+    ),
     .client(
       .VisionSimulation,
       dependencies: .AsyncAlgorithms, .MetalVisionSimulation
@@ -40,6 +49,7 @@ let package = Package(
 enum Client: String, CaseIterable {
   case Analytics
   case AppClip
+  case FeatureFlags
   case VisionSimulation
 }
 
@@ -49,6 +59,7 @@ extension Target.Dependency {
   static let AsyncAlgorithms = Target.Dependency.product(name: "AsyncAlgorithms", package: "swift-async-algorithms")
   static let ComposableArchitecture = Target.Dependency.product(name: "ComposableArchitecture", package: "swift-composable-architecture")
   static let FirebaseAnalytics = Target.Dependency.product(name: "FirebaseAnalytics", package: "firebase-ios-sdk")
+  static let FirebaseRemoteConfig = Target.Dependency.product(name: "FirebaseRemoteConfig", package: "firebase-ios-sdk")
   static let MetalVisionSimulation = Target.Dependency.product(name: "MetalColorVisionSimulation", package: "ColorVision")
   static let VisionType = Target.Dependency.product(name: "VisionType", package: "ColorVision")
 

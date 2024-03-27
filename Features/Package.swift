@@ -29,20 +29,31 @@ let package = Package(
       .CameraTab,
       clients: .VisionSimulation
     ),
-    .test(.CameraTab),
+    .test(
+      .CameraTab
+    ),
     .feature(
       .Common,
       clients: .AppClip,
       dependencies: .CpuColorVisionSimulation, .Oklab, .VisionType
     ),
-    .feature(.LearnTab),
-    .feature(.PhotosTab),
+    .test(
+      .Common
+    ),
+    .feature(
+      .LearnTab
+    ),
+    .feature(
+      .PhotosTab
+    ),
     .feature(
       .Root,
       importing: .Tabs,
       clients: .AppClip, .VisionSimulation
     ),
-    .test(.Root),
+    .test(
+      .Root
+    ),
     .feature(
       .Tabs,
       importing: .CameraTab, .LearnTab, .PhotosTab
@@ -62,6 +73,7 @@ enum Feature: String, CaseIterable {
 enum Client: String, CaseIterable {
   case Analytics
   case AppClip
+  case FeatureFlags
   case VisionSimulation
 }
 
@@ -97,6 +109,7 @@ extension Target {
       + [
         .ComposableArchitecture,
         .client(.Analytics),
+        .client(.FeatureFlags)
       ]
       + (feature == .Common ? [] : [.feature(.Common)])
     )
