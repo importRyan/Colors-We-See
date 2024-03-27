@@ -16,6 +16,8 @@ public enum AnalyticsEventName: String, AnalyticsEvent.Name {
   case cameraPermissionsSuccess
   case cameraStartFailure
   case changeVisionSimulationTapped
+  /// TODO: - Crashlytics implementation
+  case nonfatal
   case openAppStoreTapped
   case openAppStoreURLMalformed
   case viewCameraPermissions

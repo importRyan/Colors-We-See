@@ -124,10 +124,18 @@ private func bootstrap(_ send: Send<Bootstrap.Action>) async throws {
   }
 
   // Minimum/blocked version check
-  let versionCheck = try featureFlags.value(for: VersionCheck.Flag.self)
-  guard versionCheck.isCurrentVersionValid(currentVersion()) else {
-    await send(.updateRequired(reason: versionCheck.prompt))
-    return
+  do {
+    let versionCheck = try featureFlags.value(for: VersionCheck.Flag.self)
+    guard versionCheck.isCurrentVersionValid(currentVersion()) else {
+      await send(.updateRequired(reason: versionCheck.prompt))
+      return
+    }
+  } catch {
+    track(
+      .event(.nonfatal)
+      .property(.variant, VersionCheck.Flag.key)
+      .property(.reason, error.localizedDescription)
+    )
   }
 
   // Start Metal (theoretically all devices for the minimum OS should pass)
