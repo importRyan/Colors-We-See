@@ -15,7 +15,9 @@ The primary objective is to explore the latest Composable Architecture beta and 
 - [ ] Submit barebones 1.0
 - [ ] User selected image simulation + export (PhotosTab)
 - [ ] UGC sharing (snap photos, user selected images)
-- [ ] UGC-driven App Clip card (exploit ASC API)
+- [ ] Slicker CameraTab
+- [ ] UGC-driven App Clip card
+- [ ] Non-fatals
 - [ ] App Clip code generation and export
 - [ ] macOS target
 - [ ] macOS ScreenCaptureKit tab
