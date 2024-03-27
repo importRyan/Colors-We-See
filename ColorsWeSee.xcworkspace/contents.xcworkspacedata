@@ -16,6 +16,13 @@
    <FileRef
       location = "group:Features">
    </FileRef>
+   <Group
+      location = "group:ci_scripts"
+      name = "ci_scripts">
+      <FileRef
+         location = "group:ci_post_clone.sh">
+      </FileRef>
+   </Group>
    <FileRef
       location = "group:TestPlans/ModuleTests.xctestplan">
    </FileRef>
