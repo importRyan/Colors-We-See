@@ -49,7 +49,7 @@ let package = Package(
     .feature(
       .Root,
       importing: .Tabs,
-      clients: .AppClip, .VisionSimulation
+      clients: .AppClip, .LaunchEnvironment, .VisionSimulation
     ),
     .test(
       .Root
@@ -74,6 +74,7 @@ enum Client: String, CaseIterable {
   case Analytics
   case AppClip
   case FeatureFlags
+  case LaunchEnvironment
   case VisionSimulation
 }
 

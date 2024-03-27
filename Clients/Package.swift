@@ -40,6 +40,9 @@ let package = Package(
       dependencies: .FirebaseRemoteConfig
     ),
     .client(
+      .LaunchEnvironment
+    ),
+    .client(
       .VisionSimulation,
       dependencies: .AsyncAlgorithms, .MetalVisionSimulation
     )
@@ -50,6 +53,7 @@ enum Client: String, CaseIterable {
   case Analytics
   case AppClip
   case FeatureFlags
+  case LaunchEnvironment
   case VisionSimulation
 }
 

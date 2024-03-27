@@ -8,7 +8,7 @@ The primary objective is to explore the latest Composable Architecture beta and 
 
 ## To Dos
 - [x] Setup XCC (pre-build script to populate Firebase secrets, test plans)
-- [ ] Remote config (version check)
+- [x] Remote config (version check)
 - [x] Symbol stripping
 - [x] App icon
 - [ ] QC TestFlight

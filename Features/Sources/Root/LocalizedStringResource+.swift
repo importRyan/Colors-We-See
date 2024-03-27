@@ -5,6 +5,11 @@ extension LocalizedStringResource  {
   enum BootstrapFailed: Namespace {
     static let headline = key("BootstrapFailed.Headline")
   }
+  enum UpgradeRequired: Namespace {
+    static let headline = key("UpgradeRequired.Headline")
+    static let defaultReason = key("UpgradeRequired.DefaultReason")
+    static let cta = key("UpgradeRequired.CTA")
+  }
 }
 
 extension LocalizedStringResource {

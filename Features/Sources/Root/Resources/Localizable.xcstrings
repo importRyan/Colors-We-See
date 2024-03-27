@@ -11,6 +11,36 @@
           }
         }
       }
+    },
+    "UpgradeRequired.CTA" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Update"
+          }
+        }
+      }
+    },
+    "UpgradeRequired.DefaultReason" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Please update the Colors We See app in the App Store to enjoy the latest bug fixes and features."
+          }
+        }
+      }
+    },
+    "UpgradeRequired.Headline" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Update Required"
+          }
+        }
+      }
     }
   },
   "version" : "1.0"

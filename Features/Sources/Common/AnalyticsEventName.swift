@@ -4,6 +4,8 @@ public enum AnalyticsEventName: String, AnalyticsEvent.Name {
   case appBootstrapStart
   case appBootstrapSuccess
   case appBootstrapFailure
+  case appBootstrapFeatureFlagHydrationFailed
+  case appBootstrapUpdateRequired
   case appClipInvocation
   case appClipStoreKitDownloadPromptPresented
   case appClipStoreKitOverlayPresented
@@ -14,6 +16,8 @@ public enum AnalyticsEventName: String, AnalyticsEvent.Name {
   case cameraPermissionsSuccess
   case cameraStartFailure
   case changeVisionSimulationTapped
+  case openAppStoreTapped
+  case openAppStoreURLMalformed
   case viewCameraPermissions
   case viewCameraPermissionsDenied
   case viewCameraUnavailable
